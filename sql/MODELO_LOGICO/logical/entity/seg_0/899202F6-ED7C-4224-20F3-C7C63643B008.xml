@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="899202F6-ED7C-4224-20F3-C7C63643B008" name="PAGAMENTO">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 01:06:49 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_PAGAMENTO" id="54F14C50-B547-13F7-6A69-9D28C0823A36">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 01:06:59 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VALOR" id="96D60B08-7F2F-878F-38E4-85C43FDC885D">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 01:07:17 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATA" id="0E539C81-6072-A876-203E-0F7CCE056B83">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 01:07:48 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PEDIDO" id="CAB3ED1D-C7EC-E943-097C-A2CAC529DC27">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 01:09:38 UTC</createdTime>
+<generatorID>4B2110E8-9EC9-D598-5E50-1FA2BFF33EE0</generatorID>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<referedAttribute>5392169F-6B29-B945-FA1C-2E2C7BF3128B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PAGAMENTO1" id="FFD8EF37-1BCA-7E1E-04F8-BE078A3BA8B8">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 01:10:27 UTC</createdTime>
+<generatorID>D72AC5E9-170D-954F-20E9-9DB44592CE4C</generatorID>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<referedAttribute>54F14C50-B547-13F7-6A69-9D28C0823A36</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FDEF9A6B-19F8-6276-AFDE-F3D4E6631693" name="PAGAMENTO PK">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 01:07:15 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>54F14C50-B547-13F7-6A69-9D28C0823A36</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

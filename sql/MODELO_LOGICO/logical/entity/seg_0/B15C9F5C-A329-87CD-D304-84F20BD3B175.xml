@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B15C9F5C-A329-87CD-D304-84F20BD3B175" name="ENDERECO">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:45:02 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_ENDERECO" id="E19F0398-E583-0B6D-1010-5CC6C45E6C07">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:45:08 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOGRADOURO" id="7ADB58E3-816C-6DBD-5985-4F42C18396E3">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:45:09 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CIDADE" id="3C9103BD-9790-B95E-F897-1826E8E9201B">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:46:22 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UF" id="5DCEE4D3-B8F2-0DC7-BA5C-809D26FCF10B">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:45:09 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NUMERO" id="26D8E496-1532-658C-FA1F-3CA03A63C2B2">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:46:45 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_USUARIO" id="DDDADE73-CA32-742D-0667-5080057F3490">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:59:28 UTC</createdTime>
+<generatorID>3D1A4B86-B417-A1EF-57EF-769E6325F578</generatorID>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<referedAttribute>7C33AE84-3501-9096-16C5-ECCC7FEA3CCB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5DC1FDBC-C0A2-C07D-D754-27B08FACB131" name="ENDERECO PK">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:45:41 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E19F0398-E583-0B6D-1010-5CC6C45E6C07</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

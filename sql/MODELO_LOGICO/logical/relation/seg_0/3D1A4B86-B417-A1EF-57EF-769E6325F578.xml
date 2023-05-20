@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="USUARIO_ENDERECO" directorySegmentName="seg_0" id="3D1A4B86-B417-A1EF-57EF-769E6325F578">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:58:14 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<sourcePk>CF3B36AF-12E9-0AED-2CA0-F6577722E874</sourcePk>
+<targetPk>5DC1FDBC-C0A2-C07D-D754-27B08FACB131</targetPk>
+<identifying>false</identifying>
+<nameOnSource>ID_USUARIO</nameOnSource>
+<nameOnTarget>ID_USUARIO</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5E20C4AB-910B-74A0-D31F-91B71684B4AC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B15C9F5C-A329-87CD-D304-84F20BD3B175</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

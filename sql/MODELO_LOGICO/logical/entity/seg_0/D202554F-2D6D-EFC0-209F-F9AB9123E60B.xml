@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D202554F-2D6D-EFC0-209F-F9AB9123E60B" name="PORODUTO">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:48:06 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_PRODUTO" id="65D097D7-F4D4-4A78-1179-C451403D4399">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:48:27 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOME" id="91E63639-CF4A-F4C6-01DB-49C7E418F788">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:48:48 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRICAO" id="F453C165-3EC2-7D7D-E7F3-E0F7D3A1CF00">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:49:04 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRECO" id="9D038182-FB39-C485-3933-BAA8770F2427">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:49:20 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5B250DD4-0EEA-9B2F-6066-B24423C79FBC" name="PORODUTO PK">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:48:37 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>65D097D7-F4D4-4A78-1179-C451403D4399</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

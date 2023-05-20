@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="689BFBD6-849D-E8A0-863D-E8C8BD08F6F0" name="PEDIDOS">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:53:14 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_PEDIDO" id="5392169F-6B29-B945-FA1C-2E2C7BF3128B">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:53:22 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATA" id="43D70921-F96C-0EB6-F5EB-0535E7575529">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:54:03 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_USUARIO" id="FB85B4BB-CB41-4C62-1513-52F31DD8E935">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:57:05 UTC</createdTime>
+<generatorID>CE2361A9-2CC6-5F7E-A4B3-C62623FC3767</generatorID>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<referedAttribute>7C33AE84-3501-9096-16C5-ECCC7FEA3CCB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B4793D8C-AA78-6BC9-AB19-DD71A01A4278" name="PEDIDOS PK">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 00:53:49 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5392169F-6B29-B945-FA1C-2E2C7BF3128B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

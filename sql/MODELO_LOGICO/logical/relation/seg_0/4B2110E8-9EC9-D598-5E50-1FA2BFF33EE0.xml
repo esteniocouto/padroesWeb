@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PEDIDOS_PAGAMENTO" directorySegmentName="seg_0" id="4B2110E8-9EC9-D598-5E50-1FA2BFF33EE0">
+<createdBy>estenio</createdBy>
+<createdTime>2023-05-20 01:08:32 UTC</createdTime>
+<ownerDesignName>MODELO_LOGICO</ownerDesignName>
+<engineerTo>
+<item key="7E158032-D1D4-42D2-9C3F-29A93C3E13EC" value="true"/>
+</engineerTo>
+<sourcePk>B4793D8C-AA78-6BC9-AB19-DD71A01A4278</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>ID_PEDIDO</nameOnSource>
+<nameOnTarget>ID_PEDIDO</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>689BFBD6-849D-E8A0-863D-E8C8BD08F6F0</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>899202F6-ED7C-4224-20F3-C7C63643B008</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
