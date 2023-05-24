@@ -15,7 +15,7 @@ include('protect.php');
 <body>
     
 
-BEM VINDO AO PAINEL, <?php echo $_SESSION['EMAIL']; ?>
+BEM VINDO AO PAINEL, <?php echo $_SESSION['email']; ?>
 
 <a href="logout.php">Sair</a>
 

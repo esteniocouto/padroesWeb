@@ -43,7 +43,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
                 session_start();
             }
 
-            $_SESSION['id'] = $usuario['id'];
+         
             $_SESSION['email'] = $usuario['email'];
 
 /* apos criar a sessão redirecionar para o painel do usuario  */
