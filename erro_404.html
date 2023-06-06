@@ -7,6 +7,7 @@
 
 	<link rel="stylesheet" href="./css/erro_404.css">
 	<link rel="stylesheet" href="./css/neve.css">
+	<link rel ="stylesheet" href="./css/neve_puro_css.css">
 
    <script src="./js/pure-snow.js" defer></script>
 
@@ -16,13 +17,7 @@
 	
 	<div class="main-container">
 	
-	<div id="snow" count="200"></div>
-   <input 
-     id="toggle-snow"
-     type="checkbox" 
-     checked="true" 
-     onclick="showSnow(this.checked == true)"
-   	>ToggleSnow
+	
 
 	
 	<div class="sky">
@@ -74,316 +69,14 @@
 
 		<div class="snowing">
 			<div class="container"></div>
-
-<script>
-var canvas = document.createElement('canvas')
-canvas.id = 'snow'
-
-var container = document.getElementsByClassName('container');
-
-container[0].appendChild(canvas)
-
-window.onload = function(){
-var canvas = document.getElementById("snow");
-canvas.style.position = 'absolute';
-canvas.style.top = 0;
-canvas.style.left = 0;
-
-var ctx = canvas.getContext("2d");
-
-var W = window.innerWidth
-var H = $(header[0]).height();
-canvas.width = W;
-canvas.height = H;
- 
-var mp = 225; //max particles
-var particles = [];
-for (var i = 0; i < mp; i++) {
- particles.push({
- x: Math.random()*W, //x-coordinate
- y: Math.random()*H, //y-coordinate
- r: Math.random()*4+1, //radius
- d: Math.random()*mp //density
- });
-}
- 
-//Lets draw the flakes
-function draw() {
- ctx.clearRect(0, 0, W, H);
- 
- ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
- ctx.beginPath();
- for(var i = 0; i < mp; i++)
- {
- var p = particles[i];
- ctx.moveTo(p.x, p.y);
- ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
- }
- ctx.fill();
- update();
-}
- 
-//Function to move the snowflakes
-//angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
-var angle = 0;
-function update()
-{
- angle += 0.01;
- for(var i = 0; i < mp; i++)
- {
- var p = particles[i];
- //Updating X and Y coordinates
- //We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
- //Every particle has its own density which can be used to make the downward movement different for each flake
- //Lets make it more random by adding in the radius
- p.y += Math.cos(angle+p.d) + 1 + p.r/2;
- p.x += Math.sin(angle) * 2;
- 
- //Sending flakes back from the top when it exits
- //Lets make it a bit more organic and let flakes enter from the left and right also.
- if(p.x > W+5 || p.x < -5 || p.y > H)
- {
- if(i%3 > 0) //66.67% of the flakes
- {
- particles[i] = {x: Math.random()*W, y: -10, r: p.r, d: p.d};
- }
- else
- {
- //If the flake is exitting from the right
- if(Math.sin(angle) > 0)
- {
- //Enter from the left
- particles[i] = {x: -5, y: Math.random()*H, r: p.r, d: p.d};
- }
- else
- {
- //Enter from the right
- particles[i] = {x: W+5, y: Math.random()*H, r: p.r, d: p.d};
- }
- }
- }
- }
-}
-
-//animation loop
-setInterval(draw, 33);
-}
-</script>
+			
+<!-- Codigo para java script do codigo 2 -->
+			<div id="snow" count="200"></div>
 
 			<div class="snowing__box">
-			<!--<div>
-					<i class="flake" style="left: 11.39%; top: 25.00%;"></i>
-					<i class="flake" style="left: 56.30%; top: 13.54%;"></i>
-					<i class="flake" style="left: 78.43%; top: 66.48%;"></i>
-					<i class="flake" style="left: 89.60%; top: 13.62%;"></i>
-					<i class="flake" style="left: 48.19%; top: 55.04%;"></i>
-					<i class="flake" style="left: 84.30%; top: 53.18%;"></i>
-					<i class="flake" style="left: 72.50%; top: 59.57%;"></i>
-					<i class="flake" style="left: 3.49%; top: 34.41%;"></i>
-					<i class="flake" style="left: 8.36%; top: 9.45%;"></i>
-					<i class="flake" style="left: 46.31%; top: 83.74%;"></i>
-					<i class="flake" style="left: 5.06%; top: 50.27%;"></i>
-					<i class="flake" style="left: 1.00%; top: 38.49%;"></i>
-					<i class="flake" style="left: 56.80%; top: 99.62%;"></i>
-					<i class="flake" style="left: 41.66%; top: 74.85%;"></i>
-					<i class="flake" style="left: 94.54%; top: 40.63%;"></i>
-					<i class="flake" style="left: 51.67%; top: 13.80%;"></i>
-					<i class="flake" style="left: 33.38%; top: 12.67%;"></i>
-					<i class="flake" style="left: 81.21%; top: 64.41%;"></i>
-					<i class="flake" style="left: 34.68%; top: 76.89%;"></i>
-					<i class="flake" style="left: 2.70%; top: 22.34%;"></i>
-					<i class="flake" style="left: 89.98%; top: 98.27%;"></i>
-					<i class="flake" style="left: 88.92%; top: 27.86%;"></i>
-					<i class="flake" style="left: 97.47%; top: 43.57%;"></i>
-					<i class="flake" style="left: 45.38%; top: 63.41%;"></i>
-					<i class="flake" style="left: 14.50%; top: 52.79%;"></i>
-					<i class="flake" style="left: 42.93%; top: 88.13%;"></i>
-					<i class="flake" style="left: 28.37%; top: 82.08%;"></i>
-					<i class="flake" style="left: 47.73%; top: 51.33%;"></i>
-					<i class="flake" style="left: 60.90%; top: 6.30%;"></i>
-					<i class="flake" style="left: 72.81%; top: 60.69%;"></i>
-					<i class="flake" style="left: 19.23%; top: 80.91%;"></i>
-					<i class="flake" style="left: 1.68%; top: 45.43%;"></i>
-					<i class="flake" style="left: 37.55%; top: 75.75%;"></i>
-				</div>
-				<div class="snowing__item--smaller">
-					<i class="flake" style="left: 80.24%; top: 12.62%;"></i>
-					<i class="flake" style="left: 85.24%; top: 82.20%;"></i>
-					<i class="flake" style="left: 75.92%; top: 45.57%;"></i>
-					<i class="flake" style="left: 40.61%; top: 19.90%;"></i>
-					<i class="flake" style="left: 54.54%; top: 12.23%;"></i>
-					<i class="flake" style="left: 63.68%; top: 58.06%;"></i>
-					<i class="flake" style="left: 77.25%; top: 96.29%;"></i>
-					<i class="flake" style="left: 79.40%; top: 63.88%;"></i>
-					<i class="flake" style="left: 14.84%; top: 82.61%;"></i>
-					<i class="flake" style="left: 83.61%; top: 36.49%;"></i>
-					<i class="flake" style="left: 21.25%; top: 18.95%;"></i>
-					<i class="flake" style="left: 13.54%; top: 14.71%;"></i>
-					<i class="flake" style="left: 80.58%; top: 73.17%;"></i>
-					<i class="flake" style="left: 13.46%; top: 65.41%;"></i>
-					<i class="flake" style="left: 29.75%; top: 0.45%;"></i>
-					<i class="flake" style="left: 38.35%; top: 41.86%;"></i>
-					<i class="flake" style="left: 55.48%; top: 57.97%;"></i>
-					<i class="flake" style="left: 14.80%; top: 27.04%;"></i>
-					<i class="flake" style="left: 88.50%; top: 63.45%;"></i>
-					<i class="flake" style="left: 91.05%; top: 88.64%;"></i>
-					<i class="flake" style="left: 53.09%; top: 14.66%;"></i>
-					<i class="flake" style="left: 99.02%; top: 56.20%;"></i>
-					<i class="flake" style="left: 13.26%; top: 44.01%;"></i>
-					<i class="flake" style="left: 59.10%; top: 47.45%;"></i>
-					<i class="flake" style="left: 13.96%; top: 95.05%;"></i>
-					<i class="flake" style="left: 42.27%; top: 22.32%;"></i>
-					<i class="flake" style="left: 57.22%; top: 61.24%;"></i>
-					<i class="flake" style="left: 17.16%; top: 11.97%;"></i>
-					<i class="flake" style="left: 67.10%; top: 70.02%;"></i>
-					<i class="flake" style="left: 73.33%; top: 47.64%;"></i>
-					<i class="flake" style="left: 55.80%; top: 53.73%;"></i>
-					<i class="flake" style="left: 22.11%; top: 29.96%;"></i>
-					<i class="flake" style="left: 84.04%; top: 43.66%;"></i>
-				</div>
-				<div class="snowing__item--smallest">
-					<i class="flake" style="left: 35.44%; top: 23.25%;"></i>
-					<i class="flake" style="left: 86.11%; top: 57.98%;"></i>
-					<i class="flake" style="left: 51.75%; top: 81.80%;"></i>
-					<i class="flake" style="left: 48.97%; top: 38.69%;"></i>
-					<i class="flake" style="left: 47.60%; top: 52.67%;"></i>
-					<i class="flake" style="left: 62.69%; top: 99.64%;"></i>
-					<i class="flake" style="left: 95.04%; top: 74.43%;"></i>
-					<i class="flake" style="left: 10.01%; top: 86.17%;"></i>
-					<i class="flake" style="left: 56.51%; top: 14.91%;"></i>
-					<i class="flake" style="left: 30.53%; top: 33.33%;"></i>
-					<i class="flake" style="left: 12.43%; top: 85.53%;"></i>
-					<i class="flake" style="left: 76.55%; top: 86.30%;"></i>
-					<i class="flake" style="left: 26.88%; top: 13.41%;"></i>
-					<i class="flake" style="left: 66.40%; top: 3.39%;"></i>
-					<i class="flake" style="left: 55.14%; top: 89.03%;"></i>
-					<i class="flake" style="left: 13.02%; top: 2.53%;"></i>
-					<i class="flake" style="left: 43.63%; top: 33.78%;"></i>
-					<i class="flake" style="left: 77.51%; top: 66.94%;"></i>
-					<i class="flake" style="left: 29.38%; top: 8.62%;"></i>
-					<i class="flake" style="left: 36.18%; top: 94.12%;"></i>
-					<i class="flake" style="left: 55.32%; top: 80.45%;"></i>
-					<i class="flake" style="left: 48.37%; top: 99.20%;"></i>
-					<i class="flake" style="left: 95.34%; top: 2.75%;"></i>
-					<i class="flake" style="left: 90.69%; top: 66.25%;"></i>
-					<i class="flake" style="left: 72.73%; top: 79.45%;"></i>
-					<i class="flake" style="left: 72.79%; top: 85.54%;"></i>
-					<i class="flake" style="left: 73.80%; top: 55.12%;"></i>
-					<i class="flake" style="left: 82.43%; top: 3.04%;"></i>
-					<i class="flake" style="left: 86.19%; top: 98.52%;"></i>
-					<i class="flake" style="left: 96.15%; top: 68.28%;"></i>
-					<i class="flake" style="left: 26.54%; top: 0.94%;"></i>
-					<i class="flake" style="left: 85.40%; top: 54.70%;"></i>
-					<i class="flake" style="left: 67.46%; top: 24.18%;"></i>
-				</div>-->
 			</div> <!-- box-item -->
 			<div class="snowing__box">
-				<!--<div>
-					<i class="flake" style="left: 11.39%; top: 25.00%;"></i>
-					<i class="flake" style="left: 56.30%; top: 13.54%;"></i>
-					<i class="flake" style="left: 78.43%; top: 66.48%;"></i>
-					<i class="flake" style="left: 89.60%; top: 13.62%;"></i>
-					<i class="flake" style="left: 48.19%; top: 55.04%;"></i>
-					<i class="flake" style="left: 84.30%; top: 53.18%;"></i>
-					<i class="flake" style="left: 72.50%; top: 59.57%;"></i>
-					<i class="flake" style="left: 3.49%; top: 34.41%;"></i>
-  				 	<i class="flake" style="left: 8.36%; top: 9.45%;"></i>
-					<i class="flake" style="left: 46.31%; top: 83.74%;"></i>
-					<i class="flake" style="left: 5.06%; top: 50.27%;"></i>
-					<i class="flake" style="left: 1.00%; top: 38.49%;"></i>
-					<i class="flake" style="left: 56.80%; top: 99.62%;"></i>
-					<i class="flake" style="left: 41.66%; top: 74.85%;"></i>
-					<i class="flake" style="left: 94.54%; top: 40.63%;"></i>
-					<i class="flake" style="left: 51.67%; top: 13.80%;"></i>
-					<i class="flake" style="left: 33.38%; top: 12.67%;"></i>
-					<i class="flake" style="left: 81.21%; top: 64.41%;"></i>
-					<i class="flake" style="left: 34.68%; top: 76.89%;"></i>
-					<i class="flake" style="left: 2.70%; top: 22.34%;"></i>
-					<i class="flake" style="left: 89.98%; top: 98.27%;"></i>
-					<i class="flake" style="left: 88.92%; top: 27.86%;"></i>
-					<i class="flake" style="left: 97.47%; top: 43.57%;"></i>
-					<i class="flake" style="left: 45.38%; top: 63.41%;"></i>
-					<i class="flake" style="left: 14.50%; top: 52.79%;"></i>
-					<i class="flake" style="left: 42.93%; top: 88.13%;"></i>
-					<i class="flake" style="left: 28.37%; top: 82.08%;"></i>
-					<i class="flake" style="left: 47.73%; top: 51.33%;"></i>
-					<i class="flake" style="left: 60.90%; top: 6.30%;"></i>
-					<i class="flake" style="left: 72.81%; top: 60.69%;"></i>
-					<i class="flake" style="left: 19.23%; top: 80.91%;"></i>
-					<i class="flake" style="left: 1.68%; top: 45.43%;"></i>
-					<i class="flake" style="left: 37.55%; top: 75.75%;"></i>
-				</div>
-				<div class="snowing__item--smaller">
-					<i class="flake" style="left: 80.24%; top: 12.62%;"></i>
-					<i class="flake" style="left: 85.24%; top: 82.20%;"></i>
-					<i class="flake" style="left: 75.92%; top: 45.57%;"></i>
-					<i class="flake" style="left: 40.61%; top: 19.90%;"></i>
-					<i class="flake" style="left: 54.54%; top: 12.23%;"></i>
-					<i class="flake" style="left: 63.68%; top: 58.06%;"></i>
-					<i class="flake" style="left: 77.25%; top: 96.29%;"></i>
-					<i class="flake" style="left: 79.40%; top: 63.88%;"></i>
-					<i class="flake" style="left: 14.84%; top: 82.61%;"></i>
-					<i class="flake" style="left: 83.61%; top: 36.49%;"></i>
-					<i class="flake" style="left: 21.25%; top: 18.95%;"></i>
-					<i class="flake" style="left: 13.54%; top: 14.71%;"></i>
-					<i class="flake" style="left: 80.58%; top: 73.17%;"></i>
-					<i class="flake" style="left: 13.46%; top: 65.41%;"></i>
-					<i class="flake" style="left: 29.75%; top: 0.45%;"></i>
-					<i class="flake" style="left: 38.35%; top: 41.86%;"></i>
-					<i class="flake" style="left: 55.48%; top: 57.97%;"></i>
-					<i class="flake" style="left: 14.80%; top: 27.04%;"></i>
-					<i class="flake" style="left: 88.50%; top: 63.45%;"></i>
-					<i class="flake" style="left: 91.05%; top: 88.64%;"></i>
-					<i class="flake" style="left: 53.09%; top: 14.66%;"></i>
-					<i class="flake" style="left: 99.02%; top: 56.20%;"></i>
-					<i class="flake" style="left: 13.26%; top: 44.01%;"></i>
-					<i class="flake" style="left: 59.10%; top: 47.45%;"></i>
-					<i class="flake" style="left: 13.96%; top: 95.05%;"></i>
-					<i class="flake" style="left: 42.27%; top: 22.32%;"></i>
-					<i class="flake" style="left: 57.22%; top: 61.24%;"></i>
-					<i class="flake" style="left: 17.16%; top: 11.97%;"></i>
-					<i class="flake" style="left: 67.10%; top: 70.02%;"></i>
-					<i class="flake" style="left: 73.33%; top: 47.64%;"></i>
-					<i class="flake" style="left: 55.80%; top: 53.73%;"></i>
-					<i class="flake" style="left: 22.11%; top: 29.96%;"></i>
-					<i class="flake" style="left: 84.04%; top: 43.66%;"></i>
-				</div>
-				<div class="snowing__item--smallest">
-					<i class="flake" style="left: 35.44%; top: 23.25%;"></i>
-					<i class="flake" style="left: 86.11%; top: 57.98%;"></i>
-					<i class="flake" style="left: 51.75%; top: 81.80%;"></i>
-					<i class="flake" style="left: 48.97%; top: 38.69%;"></i>
-					<i class="flake" style="left: 47.60%; top: 52.67%;"></i>
-					<i class="flake" style="left: 62.69%; top: 99.64%;"></i>
-					<i class="flake" style="left: 95.04%; top: 74.43%;"></i>
-					<i class="flake" style="left: 10.01%; top: 86.17%;"></i>
-					<i class="flake" style="left: 56.51%; top: 14.91%;"></i>
-					<i class="flake" style="left: 30.53%; top: 33.33%;"></i>
-					<i class="flake" style="left: 12.43%; top: 85.53%;"></i>
-					<i class="flake" style="left: 76.55%; top: 86.30%;"></i>
-					<i class="flake" style="left: 26.88%; top: 13.41%;"></i>
-					<i class="flake" style="left: 66.40%; top: 3.39%;"></i>
-					<i class="flake" style="left: 55.14%; top: 89.03%;"></i>
-					<i class="flake" style="left: 13.02%; top: 2.53%;"></i>
-					<i class="flake" style="left: 43.63%; top: 33.78%;"></i>
-					<i class="flake" style="left: 77.51%; top: 66.94%;"></i>
-					<i class="flake" style="left: 29.38%; top: 8.62%;"></i>
-					<i class="flake" style="left: 36.18%; top: 94.12%;"></i>
-					<i class="flake" style="left: 55.32%; top: 80.45%;"></i>
-					<i class="flake" style="left: 48.37%; top: 99.20%;"></i>
-					<i class="flake" style="left: 95.34%; top: 2.75%;"></i>
-					<i class="flake" style="left: 90.69%; top: 66.25%;"></i>
-					<i class="flake" style="left: 72.73%; top: 79.45%;"></i>
-					<i class="flake" style="left: 72.79%; top: 85.54%;"></i>
-					<i class="flake" style="left: 73.80%; top: 55.12%;"></i>
-					<i class="flake" style="left: 82.43%; top: 3.04%;"></i>
-					<i class="flake" style="left: 86.19%; top: 98.52%;"></i>
-					<i class="flake" style="left: 96.15%; top: 68.28%;"></i>
-					<i class="flake" style="left: 26.54%; top: 0.94%;"></i>
-					<i class="flake" style="left: 85.40%; top: 54.70%;"></i>
-					<i class="flake" style="left: 67.46%; top: 24.18%;"></i>
-				</div>-->
-			</div> <!-- box-item -->
+,			</div> <!-- box-item -->
 		</div> <!-- /.snowing -->
 
 		<div class="mountains">
@@ -894,6 +587,7 @@ setInterval(draw, 33);
 		</div> <!-- /.water-ground -->
 
 	</div> <!-- /.water -->
+
 
 </div> <!-- /.main-container -->
 </body>
