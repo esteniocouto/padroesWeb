@@ -2,7 +2,7 @@ let snowflakesCount = 200; // Snowflake count, can be overwritten by attrs
 let baseCss = ``;
 
 
-// set global attributes
+// definir atributos globais
 if (typeof SNOWFLAKES_COUNT !== 'undefined') {
   snowflakesCount = SNOWFLAKES_COUNT;
 }
@@ -18,7 +18,7 @@ function setHeightVariables() {
   pageHeightVh = (100 * bodyHeightPx / window.innerHeight);
 }
 
-// get params set in snow div
+// scrip para push da div "neve"
 function getSnowAttributes() {
   const snowWrapper = document.getElementById('neve');
   if (snowWrapper) {
