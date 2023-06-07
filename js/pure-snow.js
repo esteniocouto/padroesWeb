@@ -28,16 +28,6 @@ function getSnowAttributes() {
   }
 }
 
-// This function allows you to turn on and off the snow
-function showSnow(value) {
-  if (value) {
-    document.getElementById('snow').style.display = "block";
-  }
-  else {
-    document.getElementById('snow').style.display = "none";
-  }
-}
-
 // Creating snowflakes
 function spawnSnow(snowDensity = 200) {
   snowDensity -= 1;
@@ -46,7 +36,7 @@ function spawnSnow(snowDensity = 200) {
     let board = document.createElement('div');
     board.className = "snowflake";
 
-    document.getElementById('snow').appendChild(board);
+    document.getElementById('neve').appendChild(board);
   }
 }
 
