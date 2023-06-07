@@ -20,7 +20,7 @@ function setHeightVariables() {
 
 // get params set in snow div
 function getSnowAttributes() {
-  const snowWrapper = document.getElementById('snow');
+  const snowWrapper = document.getElementById('neve');
   if (snowWrapper) {
     snowflakesCount = Number(
       snowWrapper.attributes?.count?.value || snowflakesCount
