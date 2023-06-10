@@ -10,7 +10,7 @@ body {
     height: 60px;
     position: fixed;
     top: 25px;
-    left: 25px;
+    left: 5px;
     z-index: 1;
 }
 
@@ -64,7 +64,7 @@ input:checked~label .hamburguer:after {
 
 .barra {
     background-color: #ffffff;
-    height: 50%;
+    height: 55%;
     width: 500px;
     position: fixed;
     transition: all .2s linear;

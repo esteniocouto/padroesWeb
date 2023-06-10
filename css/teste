@@ -1,0 +1,27 @@
+ .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        padding: 6px;
+    }
+
+    .search-bar input {
+        flex: 1;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #000;
+    }
+
+    .search-bar button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .search-bar button i {
+        font-size: 20px;
+        color: #000;
+    }
