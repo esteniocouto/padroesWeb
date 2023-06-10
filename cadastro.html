@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/menu2.css">
-    <link rel="stylesheet" href="css/menu3.css">
     <title>BRAND</title>
 </head>
 <body>
@@ -17,7 +14,7 @@
 
 
 
-              <!-- MENU --> <nav> 
+              <!-- MENU  <nav> 
                 <input type="checkbox" id="check">
                 <label for="check">
                   
@@ -77,6 +74,11 @@
                 </div>
               </nav>
 
+
+-->
+
+
+
         <!-- Conteúdo do cabeçalho -->
 <div class="uniao">
 
@@ -87,63 +89,9 @@
             <input type="text" id="txtBusca" placeholder="Buscar..."/>
             <img src="imagem/lupa.png"  id="btnBusca" alt="Buscar"/>
           </div>
-<!---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-  <!-- menu do login-->
-          <div class="menu3" onclick="toggleCaixaLogin()">INICIAR SEÇÃO</div>
-          <div class="caixa-login" id="caixa-login">
-            <a class="link" href="cadastro.html">Cadastro</a>
-            <a class="link" onclick="toggleLogin()">Login</a>
-            <div id="caixa-login-form" style="display: none;">
-              <input type="email" placeholder="E-mail">
-              <input type="password" placeholder="Senha">
-              <!-- <butto type="submit">Entrar</butto> -->
-            </div>
-          </div>
-          <div class="caixa-sobreposta" id="caixa-sobreposta">
-            <div class="caixa-login-sobreposta">
-              <input type="email" placeholder="E-mail">
-              <input type="password" placeholder="Senha">
-              <button type="submit">Entrar</button>
-            </div>
-          </div>
+  
 
-          <script>
-            function toggleCaixaLogin() {
-              var caixaLogin = document.getElementById('caixa-login');
-              if (caixaLogin.style.display === 'block') {
-                caixaLogin.style.display = 'none';
-              } else {
-                caixaLogin.style.display = 'block';
-              }
-            }
-        
-            function toggleLogin() {
-              var caixaLoginForm = document.getElementById('caixa-login-form');
-              if (caixaLoginForm.style.display === 'block') {
-                caixaLoginForm.style.display = 'none';
-              } else {
-                caixaLoginForm.style.display = 'block';
-              }
-            }
-        
-            function toggleCaixaSobreposta() {
-              var caixaSobreposta = document.getElementById('caixa-sobreposta');
-              if (caixaSobreposta.style.display === 'flex') {
-                caixaSobreposta.style.display = 'none';
-              } else {
-                caixaSobreposta.style.display = 'flex';
-              }
-            }
-          </script>
-
-
-<!---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-
-
-
-
-
+<h2> INICIAR SEÇÃO</h2>
           
   <div class="superior">
   <img src="imagem/carrinho.png" alt="">
@@ -160,30 +108,43 @@
         
         
 
- 
+
       </header>
     
-<!---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- CONTEUDO -->
 
 
-       <main>
-        <!-- Conteúdo principal do corpo 
-        
-        <div class="imagensprincipais">  
-        <div class="image-container">
-          <img src="imagem/IMG SITE 1.jpg" alt="Imagem 1" class="image" />
-          <div class="caption">Frase da imagem 1</div>
-        </div>
-        <div class="image-container">
-          <img src="imagem/siteimg.jpg" alt="Imagem 2" class="image" />
-          <div class="caption">Frase da imagem 2</div>
-        </div>
-      </div>
-<br>
+      <main>
+   
 
- -->
+<h2>DADOS PESSOAIS</h2>
+<form action="" method="POST">
+  <div class="cadastro">
+    <div class="ladoalado1">
+      <input type="email" id="email" name="email" placeholder="E-MAIL" required><br><br>
+      <input type="password" id="password" name="password" placeholder="SENHA" required><br><br>
+      <input type="text" id="fullname" name="fullname" placeholder="NOME COMPLETO" required><br><br>
+      <button type="submit">CADASTRAR</button>
+    </div>
 
- <iframe src="cadastro.html" width="1000" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="ladoalado2">
+      <label for="confirm-password">CONFIRMAR SENHA</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+      <br><br>
+      <input type="checkbox" id="receberatualiacao">
+      <label for="receberatualiacao"> Desejo receber novidades da BRAND no meu e-mail</label><br>
+      <input type="checkbox" id="politicasite" >
+      <label for="politicasite"> Li e entendi a <a href="https://static.zara.net/static/pdfs/BR/privacy-policy/privacy-policy-pt_BR-20210721.pdf">Política de Privacidade e Cookies</a></label><br>
+    </div>
+  </div>
+</form>
+
+
+
+
+
+
 
 
         

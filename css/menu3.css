@@ -1,0 +1,64 @@
+
+
+  .menu3 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .caixa-login {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    top: 50px;
+    right: 20px;
+  }
+  .menu3 a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    margin-right: 10px;
+  }
+
+
+  .caixa-login input {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .link {
+    margin-bottom: 10px;
+  }
+
+  .caixa-sobreposta {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .caixa-login-sobreposta {
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+
+  .caixa-login-sobreposta input {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .caixa-login-sobreposta button {
+    margin-top: 10px;
+  }
+
