@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, itaque. Ratione iure expedita consequuntur eum adipisci nisi, vel ullam molestias laborum modi, aliquid facere recusandae quos qui magni et iste?</h3> 
+
+<form action="" method="post" name="FormConcatena">
+    Digite o nome...........: <input type="text" name="f_nome"> <br>
+    Digite o sobrenome...: <input type="text" name="f_sobrenome"><br>
+    <input type="button" name="btn_concatena" value="concatena" onclick="concatena()">
+    <input type="reset" name="btn_cancela" value="cancelar">
+</form>
+
+<script language="javascript">
+var js_nome;
+var js_sobrenome;
+var js_nomecompeto;
+
+function concatena(){
+    /* Entrada de Dados */
+    js_nome = document.FormConcatena.f_nome.value;
+    js_sobrenome = document.FormConcatena.f_sobrenome.value;
+    /Processamento de Dados/
+    js_nomecompleto = js_nome+ ' ' +js_sobrenome;
+    /Saída de Dados/
+    window.alert('Olá ' +js_nomecompleto);
+}
+
+</script>
+
+</body>
+</html>

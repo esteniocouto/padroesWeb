@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+} /*confg pag*/
+
+:root{
+    --white:#f2efca;
+    --dark:#1e1c2a;
+} /*menus color*/
+
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: fixed;
+} /*barra menu topo*/
+
+
+.navigation .logo{
+    color: var(--dark);
+    font-size: 3.0rem;
+    font-weight: 1000;
+} /*logo principal*/
+
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+} /*itens menu*/
+
+.navigation ul li a{
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+} /*confg textos menus*/
+
+
+.navigation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+} /*confg icones menus*/
+
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10%;
+    
+} /*fundo principal*/
+
+
+.home-text .text-h4{
+    font-size: 4rem;
+    line-height: 4rem;
+    position: fixed;
+    right: 50%;
+    text-align: center;
+ 
+} /*brand central*/
+
+
+.home-text .text-h2{
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+
+}
+
+
+nav.menu-lateral {
+    width: 55px;
+    height: 100%;
+    background-color: #f2efca;
+    padding: 40px 0 40px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+
+} /*menu lateral*/
+
+.menu-lateral a:focus{
+    color: white;
+}/*menu lateral cor*/
+
+
+nav.menu-lateral.expandir{
+width: 600px;
+
+
+} /*posiçao menu lateral*/
+
+
+.btn-expandir > i{
+    color: dark;
+    font-size: 30px;
+    cursor: pointer;
+} /*botao lateral tres traços*/
+
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+} /*itens dos menus*/
+
+
+ul li.item-menu:hover{
+    background: rgb(158, 147, 101);   
+} /*cor de seleçao menu*/
+
+ul li.ativo{
+    background-color: rgb(158, 147, 101);
+} /*cor seleçao menu fixo*/
+
+/*menu login abaixo*/
+.container {
+    width: 600px;
+    background-color: #f2efca;
+    border-radius: 70px 0 70px 0;
+    padding: 100px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    transform: translateY(50%);
+    flex-direction: column;
+
+}
+.container h2{
+    margin: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #f2efca;
+    border-bottom: 1px solid #f2efca;
+    font-size: 2rem;
+
+}
+.form{
+    margin-bottom: 2rem;
+}
+
+.form label, input{
+    display: block;
+    width: 100%;
+
+
+}
+.container bootstrap snipets {
+    width: 600px;
+    background-color: #f2efca;
+    border-radius: 70px 0 70px 0;
+    padding: 100px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    transform: translateY(50%);
+    flex-direction: column;
+}
