@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULO SALARIO</title>
+</head>
+<body>
+    
+<H1>CALCULO SALARIO LÍQUIDO</H1>
+
+    <form action="" method="post" onsubmit="calcular(); return false;">
+<input type="number" id="horatrabalhada" placeholder="Quantidade hora trabalhada " ><br><br>
+<input type="number" id="valorhora" placeholder="valor da hora trabalhada"  ><br><br>
+<input type="number" id="percentualdesconto" placeholder="percentual de desconto " ><br><br>
+<input type="submit"  value="calcular">
+    </form>
+
+<p id="resultado"></p>
+<p id="horatrabalhadamin"></p>
+<p id="horatrabalhadamax"></p>
+<p id="valorhora1"></p>
+<p id="desconto"></p>
+
+
+<script>
+
+function calcular() {
+
+    // obtendo as variaveis do formulario para o javascript
+
+/* para cada variavel "var" atribuiremos o nome da mesma varialvel do formulario, 
+   usaremos o metodo "parsefloat" analisa um argumento string, e retorna um numero mesmo já tendo definido no formulario o tipo
+   (document.getElementById(" nome variavel do formulario").value ) = esse metodo ira buscar no formulario a variavel com o nome atribuida a ela e atribuira o valor digitado no formulario a variavel do script  */
+    
+   var horatrabalhada = parseFloat (document.getElementById("horatrabalhada").value ); 
+    var valorhora = parseFloat (document.getElementById("valorhora").value );
+    var percentualdesconto = parseFloat (document.getElementById("percentualdesconto").value );
+    
+// criando uma variavel chamada "condicosvalidas" para verificar se todas condiçoes para realização do calculo serão satisfeitas
+
+    condicoesvalidas = true;
+
+// verificaremos se os valores digitados estão nos paremetros validos
+
+/* para verifirar sé os valores correspondem com as restiçoes iremos aplicar 
+   "if" ("variavel" + " restrição") que ira verificar se o valor atribuido da variavel corresponde a restição atribuida  
+   document.getElementById("variavel").textContent = "mensagem"; para printar caso a restrição não seja satisfeita a variavel tem que ser atribuida no codigo html para que ao cliar
+   e utilizaremos a variavel "condicoesvalidas" sempre como "false" quando as variaves não correspondeream as restrições
+   */
+
+   /* O  comando (document.getElementById("variavel").textContent = "") serve para limpar o conteudo em html para não haver validação invalida ou incorreta no id atribuido */
+
+
+if (valorhora < 25 || valorhora > 50) {
+  document.getElementById("valorhora1").textContent = "Valor da hora travalhada é invalida "; 
+  condicoesvalidas = false; } 
+  else {document.getElementById("valorhora1").textContent = "";}
+
+  if (horatrabalhada < 135) {
+    document.getElementById("horatrabalhadamin").textContent = "A quantidade de horas é inferior ao permitido ";} 
+    else if (horatrabalhada > 180) {
+    document.getElementById("horatrabalhadamax").textContent = "A quantidade de horas é superior ao permitido ";
+    condicoesvalidas = false; } 
+    else { document.getElementById("horatrabalhadamin").textContent = "";
+           document.getElementById("horatrabalhadamax").textContent = "";}
+
+
+  if (percentualdesconto < 5 || percentualdesconto > 15) {
+    document.getElementById("desconto").textContent = "percentual de desconto é invalido";
+    condicoesvalidas = false;
+  } else { document.getElementById("desconto").textContent = "";}
+
+
+  /* depois de definir as condições chamamos a variavel "condicoesvalidas" para verificar se todas elas foram satisfeitas */
+
+  if (condicoesvalidas == true) {
+
+    // verificado o valores iremos calcular o salário liquido
+
+/* para para realizar os calculos criaremos as variaveis salariobruto, descontoInss e salarioliquido
+e apricaremos as regras de matematica basica para cada uma delas 
+   */
+
+
+    var salariobruto = horatrabalhada * valorhora;
+    var descontoinss = salariobruto * ( percentualdesconto / 100);
+    var salarioliquido = salariobruto - descontoinss;
+    document.getElementById("resultado").textContent = "Salário Líquido: R$ " + salarioliquido.toFixed(2);} 
+
+    else {document.getElementById("resultado").textContent = "";}
+
+
+}
+
+  /* Aluno: ESTENIO COUTO BORGES JUNIOR
+     Turma: Ciência de Dados              */
+goo
+
+</script>
+
+</body>
+</html>

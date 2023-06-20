@@ -1,0 +1,186 @@
+    <!DOCTYPE html>
+    <html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/menu2.css">
+        <link rel="stylesheet" href="css/menu3.css">
+       
+        <title>BRAND</title>
+    </head>
+    <body>
+        
+    
+        <header>
+    
+    
+    
+                  <!-- MENU --> <nav> 
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                      
+                        <div class="menu" >
+                            <span class="hamburguer"></span>
+                
+                        </div>
+                    </label>
+                
+                    <div class="barra">
+                        <div class="itens">
+                          <ul class="menuhorizontal2">
+                            <li class="btnesquerdo">
+            
+                            <li><a href="#">FEMININO</a>
+                              
+                            <ul>
+                              <p><strong>COLEÇÃO PRIMAVERA VERÃO </strong></p>
+                              <li><a href="#">NEW IN</a></li>
+                              <li><a href="#">Vestido</a></li>
+                              <li><a href="#">Blusa</a></li>
+                              <li><a href="#">Body</a></li>
+                              <li><a href="#">Camiseta</a></li>
+                              <li><a href="#">Jaqueta</a></li>
+                              <li><a href="#">Moletom</a></li>
+                              <li><a href="#">Calça</a></li>
+                              <br><br>
+                              <p> <strong>ON SALE </strong></p>
+                              <li><a href="#">mais vendidos</a></li>
+                              <li><a href="#">tendências</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#">MASCULINO</a>
+                            <ul>
+                              <li><a href="#">NEW IN</a></li>
+                              <li><a href="#">Polo</a></li>
+                              <li><a href="#">Blusa</a></li>
+                              <li><a href="#">Regata</a></li>
+                              <li><a href="#">Camiseta</a></li>
+                              <li><a href="#">Jaqueta</a></li>
+                              <li><a href="#">Moletom</a></li>
+                              <li><a href="#">Calça</a></li>
+                              <br><br>
+                              <p> <strong>ON SALE </strong></p>
+                              <li><a href="#">mais vendidos</a></li>
+                              <li><a href="#">tendências</a></li>
+                            </ul>
+                            <li><a href="#">INFANTIL</a>
+                              <ul>
+                                <li><a href="#">Macacão</a></li>
+                                <li><a href="#">Body</a></li>
+                                <li><a href="#">Blusa</a></li>
+                                <li><a href="#">Conjunto</a></li>
+                                <li><a href="#">Jardineira</a></li>
+                                <li><a href="#">Moletom</a></li>
+                                <li><a href="#">Calça</a></li>
+                                <li><a href="#">Bermuda</a></li>
+                                <br><br>
+                                <p> <strong>ON SALE </strong></p>
+                                <li><a href="#">mais vendidos</a></li>
+                                <li><a href="#">tendências</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="../posicionamento/p6.html">Posic. 6</a></li>
+                            <li><a href="../posicionamento/p7.html">Posic. 7</a></li>
+                            </ul>
+    
+    
+                        </div>
+                
+                    </div>
+                  </nav>
+    
+            <!-- Conteúdo do cabeçalho -->
+    <div class="uniao">
+    
+            <div class="logo"> <h1>BRAND</h1> </div>
+            <!-- barra de pesquisa -->
+    <img src="imagem/lupa.png" alt="lupa" width="30" height="30" alingn="right">
+            <div class="barrasuperio">  
+            <input type="text">
+    
+    
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+      <!-- menu do login-->
+              <div class="menu3" onclick="toggleCaixaLogin()">INICIAR SEÇÃO</div>
+              <div class="caixa-login" id="caixa-login">
+                <a class="link" href="cadastro.html">Cadastro</a>
+                <a class="link" onclick="toggleLogin()">Login</a>
+                <div id="caixa-login-form" style="display: none;">
+                  <input type="email" placeholder="E-mail">
+                  <input type="password" placeholder="Senha">
+                  <!-- <butto type="submit">Entrar</butto> -->
+                </div>
+              </div>
+              <div class="caixa-sobreposta" id="caixa-sobreposta">
+                <div class="caixa-login-sobreposta">
+                  <input type="email" placeholder="E-mail">
+                  <input type="password" placeholder="Senha">
+                  <button type="submit">Entrar</button>
+                </div>
+              </div>
+    
+              <script>
+                function toggleCaixaLogin() {
+                  var caixaLogin = document.getElementById('caixa-login');
+                  if (caixaLogin.style.display === 'block') {
+                    caixaLogin.style.display = 'none';
+                  } else {
+                    caixaLogin.style.display = 'block';
+                  }
+                }
+            
+                function toggleLogin() {
+                  var caixaLoginForm = document.getElementById('caixa-login-form');
+                  if (caixaLoginForm.style.display === 'block') {
+                    caixaLoginForm.style.display = 'none';
+                  } else {
+                    caixaLoginForm.style.display = 'block';
+                  }
+                }
+            
+                function toggleCaixaSobreposta() {
+                  var caixaSobreposta = document.getElementById('caixa-sobreposta');
+                  if (caixaSobreposta.style.display === 'flex') {
+                    caixaSobreposta.style.display = 'none';
+                  } else {
+                    caixaSobreposta.style.display = 'flex';
+                  }
+                }
+              </script>
+    
+    
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    
+    
+    
+    
+    
+    <!-----icones na barra superior------>
+              
+      <div class="superior">
+      <img src="imagem/carrinho.png" alt="carrinho" width="30" height="30">
+      <img src="imagem/estrela.png" alt="estrela" width="30" height="30">  </div> 
+              
+      
+      
+      </div>
+      
+    </div>
+    
+    
+    
+            
+            
+    
+     
+          </header>
+        
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    
+
+
+</body>
+</html>
