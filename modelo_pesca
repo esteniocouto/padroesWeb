@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
-	<link rel="stylesheet"  href="./css/pesca.css"> 
-	
-  <script src="./js/pesca.js" defer></script>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<title>Document</title></head>
-</head>	
+  <meta charset="UTF-8">
+  <title>CodePen - js fishing game</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
 <body>
-    <div class="fishing" data-reelpower="10" data-baitweight="1" data-progress="2" data-progresspenalty="3" data-progressupdaterate="200">
+<!-- partial:index.partial.html -->
+<div class="fishing" data-reelpower="10" data-baitweight="1" data-progress="2" data-progresspenalty="3" data-progressupdaterate="200">
   <div class="rod">
     <div class="reel">
       <div class="handle"></div>
@@ -31,5 +28,10 @@
     </div>
   </div>
 </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js'></script>
+  <script src="./js/pesca.js"></script>
+
 </body>
 </html>
