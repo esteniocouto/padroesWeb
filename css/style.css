@@ -3,8 +3,12 @@ body{
 	width: 1024px;
 	height: 600px;
 	padding-top: 50px;
+  background-color: #e4e0c6;
 }
 
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*header*/
 
 
 header {
@@ -33,6 +37,11 @@ header {
 	padding-left: 70px;
   }
   
+.logo a {
+  color: #c8c5ad;
+
+}
+
   .barrasuperio {
 	padding-top: 10px;
 	display: flex;
@@ -40,9 +49,16 @@ header {
   }
   
   .barrasuperio > * {
-	margin-left: 10px;
+	margin-left: 26px;
+	float: left;
+	width: 50%;
+	color: initial;
+	opacity: 1;
   }
 
+
+
+  
   /* unir duas divs em uma linha */
 
   .uniao{
@@ -57,11 +73,7 @@ header {
   .uniao > div { flex:1;}
 
 
-
-
-
-
-
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
   /* Estilos para o corpo */
@@ -75,38 +87,44 @@ header {
 
 
   .image-principal {
-	display: inline-block;
-	position: relative;
-}
+    display: inline-block;
+    /*position: relative;*/
+  }
+  
+  .image-principal img {
+    width: 500px;
+    height: 500px;
+    transition: filter 0.3s ease;
+  }
+  
+  .image-principal:hover img {
+    filter: brightness(50%);
+  }
+  
+  .image-principal .message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-principal:hover .message {
+    opacity: 1;
+  }
+  
 
-.image-principal img {
-	width: 500px;
-	height: 500px;
-	transition: filter 0.3s ease;
-}
-
-.image-principal:hover img {
-	filter: brightness(50%);
-}
-
-.image-principal .message {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: #fff;
-	font-size: 18px;
-	opacity: 0;
-	transition: opacity 0.3s ease;
-}
-
-.image-principal:hover .message {
-	opacity: 1;
-}
 
 
 
 
+
+
+
+  /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 
@@ -123,50 +141,22 @@ header {
 
 
 
-
-   /* barra de pesquisa */
-
-   #divBusca{
-	background-color:#fbfbfb;
-	border:solid 1px;
-	border-radius:15px;
-	width:300px;
-	height: 40px;;
-  }
   
-  #txtBusca{
-	float:left;
-	background-color:transparent;
-	padding-left:5px;
-	font-style:italic;
-	font-size:18px;
-	border:none;
-	height:32px;
-	width:260px;
-  }
 
 
+ 
 
-
-
-/*butão*/
-
-  button {
-	background: hsla(0, 0%, 96%, 0);
-	border: 1px solid rgba(0, 0, 0, 0.6);
-	color: #000000;
+.participante1, .participante2, .participante3, .participante4{
 	display: inline-block;
-	font-size: 1.2em;
-	margin: 20px;
-	padding: 10px;
-	width: 400px;
-  }
-  
+	margin-right: 20px;
+	margin-left: 20px;
+}
 
 
-  /*COLOCANDO DUAS DIVS LADO A LADO*/
 
-  .ladoalado1 {
+ /*COLOCANDO DUAS DIVS LADO A LADO*/
+
+ .ladoalado1 {
 	float: left;
 	width: 50%;
 	color: initial;
@@ -180,22 +170,83 @@ header {
 	opacity: 1;
   }
 
-/*edição do botão imput do login */
 
-  input{
+
+
+
+
+                   /*formulario cadastro cliente*/
+
+.dados-pessoais {
+  width: 1000px; 
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+ .ladoalado1 {
+	float: left;
+	width: 50%;
+	color: initial;
+	opacity: 1;
+  }
+  
+  .ladoalado2 {
+	float: right;
+	width: 50%;
+	color: initial;
+	opacity: 1;
+  }
+
+  form input{
     color: rgb(10, 7, 7); /* Define a cor do texto do placeholder */
     font-size: 14px; /* Define o tamanho da fonte do placeholder */
     font-style: italic; /* Define o estilo da fonte do placeholder */
     padding: 5px; /* Define o espaçamento interno do placeholder */
-    box-shadow: inset 0 0 0 2px rgb(10, 6, 6); /* Define a sombra interna do placeholder */
+    
 	background-color:#e4e0c6; /* Define o fundo do placeholder como transparente */
 	border: none;
     background: none; /* Remove o fundo do placeholder */
+    
 }
 
+/*botão*/
 
-.participante1, .participante2, .participante3, .participante4{
+form button[type="submit"] {
+	background: hsla(0, 0%, 96%, 0);
+	border: 1px solid rgba(0, 0, 0, 0.6);
+	color: #000000;
 	display: inline-block;
-	margin-right: 20px;
-	margin-left: 20px;
+	font-size: 1.2em;
+	margin: 20px;
+	padding: 10px;
+	width: 300px;
+
+  
+  }
+
+  .dados-pessoais input[type="checkbox"]{
+    
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+    
+
+  }
+
+form.dados-pessoais input[type="email"],
+form.dados-pessoais input[type="password"],
+form.dados-pessoais input[type="text"] {
+  width: 350px;
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+
+  
 }
