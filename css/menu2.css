@@ -6,6 +6,8 @@
     }
     .menuhorizontal2 ul{
     list-style: none;
+    padding-left: 20px; 
+    padding-right: 20px;
     }
     .menuhorizontal2 li{
     width: 80px;
@@ -14,6 +16,8 @@
     position: relative;
     display: inline;
     float: left;
+    padding-left: 30px;
+    padding-right: 30px; 
     
   
     }

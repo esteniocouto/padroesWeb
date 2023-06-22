@@ -4,7 +4,7 @@ body {
 }
 
 .menu {
-    background: white;
+    background: rgba(255, 255, 255, 0);
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -14,8 +14,8 @@ body {
     z-index: 1;
 }
 
-.hamburguer {
-    position: relative;
+.menu1 {
+    position: absolute;
     display: block;
     background: #000;
     width: 30px;
@@ -25,8 +25,8 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.hamburguer:before,
-.hamburguer:after {
+.menu1:before,
+.menu1:after {
     background: #000;
     content: '';
     display: block;
@@ -36,28 +36,28 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.hamburguer:before {
+.menu1:before {
     top: -10px;
 }
 
-.hamburguer:after {
+.menu1:after {
     bottom: -10px;
 }
 
-input {
+.menuflutuante input[type="checkbox"] {
     display: none;
 }
 
-input:checked~label .hamburguer {
+.menuflutuante input[type="checkbox"]:checked~label .menu1 {
     transform: rotate(45deg);
 }
 
-input:checked~label .hamburguer:before {
+.menuflutuante input[type="checkbox"]:checked~label .menu1:before {
     transform: rotate(90deg);
     top: 0;
 }
 
-input:checked~label .hamburguer:after {
+.menuflutuante input[type="checkbox"]:checked~label .menu1:after {
     transform: rotate(90deg);
     bottom: 0;
 }
