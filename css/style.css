@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	width: 1024px;
+	width: 1200px;
 	height: 600px;
 	padding-top: 50px;
   background-color: #e4e0c6;
@@ -56,6 +56,31 @@ header {
 	opacity: 1;
   }
 
+
+
+  #divBusca{
+    
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:0px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width: 300px;
+    text-align: right;
+  }
+
+  .divBusca input[tbody="text"] {}
 
 
   
@@ -133,25 +158,25 @@ header {
   
   footer {
 	background-color: #e6e4d6;
-	height: 200px;
-	
+	height: 319px;
+	display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  
   }
 
+  .h4footer {
+font-size: 20px;
+
+   }
 
 
-
-
-  
-
-
- 
-
-.participante1, .participante2, .participante3, .participante4{
-	display: inline-block;
-	margin-right: 20px;
-	margin-left: 20px;
-}
-
+  .coluna {
+    flex: 0 0 calc(100% / 3); /* Divide a largura igualmente entre as 3 colunas */
+    padding: 2px;
+    
+  }
 
 
  /*COLOCANDO DUAS DIVS LADO A LADO*/
@@ -250,3 +275,4 @@ form.dados-pessoais input[type="text"] {
 
   
 }
+
