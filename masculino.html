@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
@@ -9,10 +8,11 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/menu2.css">
     <link rel="stylesheet" href="css/menu3.css">
+    <link rel="stylesheet" href="css/galeria.css">
    
 
    
-    <title>BRIEFING</title>
+    <title>MASCULINO</title>
 </head>
 <body>
     
@@ -54,7 +54,7 @@
                         <li><a href="#">tendências</a></li>
                       </ul>
                       </li>
-                      <li><a href="masculinho.html">MASCULINO</a>
+                      <li><a href="masculino.html">MASCULINO</a>
                       <ul>
                         <li><a href="#">NEW IN</a></li>
                         <li><a href="#">Polo</a></li>
@@ -113,24 +113,31 @@
 
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
                                                                 <!-- menu do login-->
-          <div class="menu3" onclick="toggleCaixaLogin()"> INICIAR SEÇÃO</div>
-          <div class="caixa-login" id="caixa-login">
-            <a class="link" href="cadastro.html"><p style="text-align: center; border: 1px solid black;">   CRIE SUA CONTA   </p>
-            <p style="text-align: center;">OU</p>
-            <a class="link" onclick="toggleLogin()"><p style="text-align: center; border: 1px solid black;">   ACESSE SUA CONTA   </p></a>
-            <div id="caixa-login-form" style="display: none;">
-              <input type="email" placeholder="E-mail">
-              <input type="password" placeholder="Senha">
-              <!-- <butto type="submit">Entrar</butto> -->
-            </div>
-          </div>
-          <div class="caixa-sobreposta" id="caixa-sobreposta">
-            <div class="caixa-login-sobreposta">
-              <input type="email" placeholder="E-mail">
-              <input type="password" placeholder="Senha">
-              <button type="submit">Entrar</button>
-            </div>
-          </div>
+        <div class="menu3" onclick="toggleCaixaLogin()" style="position: relative;">
+  INICIAR SEÇÃO
+</div>
+<div class="caixa-login" id="caixa-login">
+  <a class="link" href="cadastro.html">
+    <p style="text-align: center; border: 1px solid black;">CRIE SUA CONTA</p>
+  </a>
+  <p style="text-align: center;">OU</p>
+  <a class="link" onclick="toggleLogin()">
+    <p style="text-align: center; border: 1px solid black;">ACESSE SUA CONTA</p>
+  </a>
+  <div id="caixa-login-form" style="display: none;">
+    <input type="email" placeholder="E-mail">
+    <input type="password" placeholder="Senha">
+    <button type="submit">Entrar</button>
+  </div>
+</div>
+<div class="caixa-sobreposta" id="caixa-sobreposta">
+  <div class="caixa-login-sobreposta">
+    <input type="email" placeholder="E-mail">
+    <input type="password" placeholder="Senha">
+    <button type="submit">Entrar</button>
+  </div>
+</div>
+
 
           <script>
             function toggleCaixaLogin() {
@@ -171,7 +178,7 @@
 <!-----icones na barra superior------>
           
   <div class="superior">
-    <a href="cadastro.html"> <img src="imagem/carrinho.png" alt="carrinho" width="24" height="25"  hspace="12" > </a>
+    <a href="carrinho.html"> <img src="imagem/carrinho.png" alt="carrinho" width="24" height="25"  hspace="12" > </a>
   <a href="erro_404.html"> <img src="imagem/estrela.png" alt="estrela" width="24" height="25"> </a>  </div> 
           
   
@@ -189,118 +196,94 @@
       </header>
     
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-
-       <main>
-        <!-- Conteúdo principal do corpo  -->
-        
-
-        <main style="text-align: center;"
-        bgcolor="d7bf9b"
-        >
-        
-        
-        
-            <h1>Briefing do projeto</h1> <hr>
-        
-            <nav>
-                <a href="#tp1">1</a>
-                <a href="#tp2">2</a>
-                <a href="#tp3">3</a>
-                <a href="#tp4">4</a>
-                <a href="#tp5">5</a>
-                <a href="#tp6">6</a>
-                <a href="#tp7">7</a>
-                <a href="#tp8">8</a>
-                <a href="#tp9">9</a>
-                <a href="#tp10">10</a>
-                <a href="#tp11">11</a>
-                <a href="#tp12">12</a>
-            </nav>
-        
-            <h3 id="tp1">1.	Ramo de atuação da empresa e tempo de mercado:</h3>
-            <p> A marca "BRAND" atua no ramo do comércio varejista há0 5 anos.</p>
-        
-            <h3 id="tp2">2. Número de filiais/franquias:</h3>
-            <p>A empresa não possui nenhuma filial até o momento.</p>
-        
-            <h3 id="tp3">3. Produtos e/ou serviços oferecidos:</h3>
-            <p>A marca vende peças de vestuário para o público feminino, masculino e infantil; <br>
-                 Além disso, junto com os produtos, oferecemos uma experiencia de compra exclusiva para cada 
-                cliente. </p>
-        
-        
-            <h3 id="tp4">4. Endereço do site atual:</h3>
-            <p>www.usebrand.com.br</p>
-        
-            <h3 id="tp5">5. Vantagens/desvantagens sobre os concorrentes:</h3>
-            <p>A marca tem a vantagem de ser inclusiva para diferentes públicos, trazendo produtos de qualidade 
-                com preços acessíveis. <br> Além disso o site da loja foi feito com um design simples que ajuda na 
-                experiência do usuário.</p>
-        
-            <h3 id="tp6">6. Referências de sites:</h3>
-            <p>Zara: https://www.zara.com/br/ <br>
-                Riachuelo: https://www.riachuelo.com.br
-            </p>
-        
-            <h3 id="tp7">7. Objetivos a serem alcançados:</h3>
-            <p>Criar o site de uma loja online que seja simples e objetivo, de modo que o usuário tenha sua experiência
-                facilitada,  <br> mantendo um design gráfico que projete a imagem da marca e comunique sua missão 
-            ao público.</p>
-        
-             
-            <h3 id="tp8">8.  Público-alvo:</h3>
-            <p>O principal público alvo da marca é o feminino, englobando mulheres dos 20 aos 40 anos que tenham
-                um estilo chique-minimalista. <br> Além deste, a marca também trabalha com um público masculino na faixa
-                 dos 20 aos 40 anos, e com o público infantil dos 5 aos 12 anos. </p>
-        
-        
-        <h3 id="tp9">9. Conteúdo do site: </h3>
-        <p>O site conta com uma página principal com ícones que levam o usuário para os menus dos produtos, para 
-            uma aba de pesquisa, <br> uma aba que permite fazer login no site ou criar uma conta em outra página,
-            página com os produtos que <br> foram favoritados e uma página que mostra o que foi adicionado
-            no carrinho de compras. <br>  As duas imagens apresentadas na página principal levam o usuário à página 
-            das peças da atual coleção <br> e à "newsletter" da marca consecutivamente. </p>
-        
-        
-            <h3 id="tp10">10. Imagem a ser transmitida para os usuários:</h3>
-              <p>A imagem da marca é apresentada de forma elegante e minimalista, mantendo esse design
-                presente em suas coleçoes, através roupas com paletas <br> neutras emodelagens clássicas porém com 
-                toque de modernidade </p>
-        
-        <h3 id="tp11">11. Tecnologias ou linguagens desejadas:</h3>
-             <p>Plataforma para desenvolver o projeto: Github <br>
-                Framework: Canva <br>
-                Linguagens: HTML, CSS, JavaScript, Python.</p>
-        
-        <h3 id="tp12">12. Prazo para desenvolvimento e/ou cronograma:</h3>
-        <p>O grupo teve um prazo de aproximadamente um mês para desenvolver o projeto.</p>
-
-  
-  <br><br><br>
-  <br><br><br>
-  <br><br><br>
-  <br><br><br>
-  <br><br><br>  <br><br><br>
-  <br><br><br>
-  <br><br><br>
-  <br><br><br>  <br><br><br>
-  <br><br><br>
-  <br><br><br>
-  <br><br><br>  <br><br><br>
-  <br><br><br>
-  <br><br><br>
-  <br><br><br>
- 
-
- 
-
-
-  
-
-
-      </main>
-    
+<main>
+  <h2 class="logo">COLEÇÃO MASCULINA</h2>
+            <br>
+    <section class="home">
+        <div class="home-text">
+           
+            <div class="container1 bootstrap snipets">
+                <div class="container bootstrap snipets">
+                    <h1 class="text-center text-muted">Catálogo Masculino</h1>
+            
+                  
+                    <div class="row flow-offset-1">
+                      <div class="col-xs-6 col-md-4">
+                        <div class="product tumbnail thumbnail-3"><a href="#"><img src="imagens roupas/masc1.png" width="350" height="280" alt=""></a>
+                          <div class="caption">
+                            <h6><a href="#">Camisa</a></h6><span class="price">
+                              <del>R$150,90</del></span><span class="price sale">R$99,90</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <div class="product tumbnail thumbnail-3"><a href="#"><img src="imagens roupas/MASC4.png" width="350" height="280" alt=""></a>
+                          <div class="caption">
+                            <h6><a href="#">Blusa de Manga Longa</a></h6><span class="price">
+                              <del>R$99,90</del></span><span class="price sale">R$49,90</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <div class="product tumbnail thumbnail-3"><a href="#"><img src="imagens roupas/masc3.png" width="350" height="280" alt=""></a>
+                          <div class="caption">
+                            <h6><a href="#">Camisa de Manga Curta</a></h6><span class="price">
+                              <del>R$199,90</del></span><span class="price sale">R$159,90</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <div class="product tumbnail thumbnail-3"><a href="#"><img src="imagens roupas/masccal.png" width="350" height="280" alt=""></a>
+                          <div class="caption">
+                            <h6><a href="#">Calça</a></h6><span class="price">
+                              <del>R$199,90</del></span><span class="price sale">R$99,90</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <div class="product tumbnail thumbnail-3"><a href="#"><img src="imagens roupas/masccal2.png" width="350" height="280" alt=""></a>
+                          <div class="caption">
+                            <h6><a href="#">Calça</a></h6><span class="price">
+                              <del>R$150,90</del></span><span class="price sale">R$99,90</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <div class="product tumbnail thumbnail-3"><a href="#"><img src="imagens roupas/masccami.png" width="350" height="280" alt=""></a>
+                          <div class="caption">
+                            <h6><a href="#">Camiseta</a></h6><span class="price">
+                              <del>R$99,90</del></span><span class="price sale">R$49,90</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <div class="product tumbnail thumbnail-3"><a href="#"><img src="imagens roupas/mascmol1.png" width="350" height="280" alt=""></a>
+                          <div class="caption">
+                            <h6><a href="#">Moletom</a></h6><span class="price">R$149,90</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <div class="product tumbnail thumbnail-3"><a href="#"><img src="imagens roupas/mascmol.png" width="350" height="280" alt=""></a>
+                          <div class="caption">
+                            <h6><a href="#">Moletom</a></h6><span class="price">
+                              <del>R$129,90</del></span><span class="price sale">R$99,90</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <div class="product tumbnail thumbnail-3"><a href="#"><img src="imagens roupas/masccamis2.png" width="350" height="280" alt=""></a>
+                          <div class="caption">
+                            <h6><a href="#">Camiseta</a></h6><span class="price">
+                              <del>R$99,90</del></span><span class="price sale">R$49,90</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  </div>
+    </section>
+</main>
       
 
       <hr size="1">

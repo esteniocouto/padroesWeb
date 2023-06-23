@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/menu2.css">
     <link rel="stylesheet" href="css/menu3.css">
    
 
    
-    <title>BRAND</title>
+    <title>CADASTRO</title>
 </head>
 <body>
     
@@ -20,24 +20,103 @@
 
 
 
+              <!-- MENU --> <nav class="menuflutuante"> 
+                <input  type="checkbox" id="check">
+                <label for="check">
+                  
+                    <div class="menu" >
+                        <span class="menu1"></span>
+            
+                    </div>
+                </label>
+            
+                <div class="barra">
+                  <div class="itens">
+                    <ul class="menuhorizontal2">
+                      <li class="btnesquerdo">
+      
+                      <li><a href="feminino.html">FEMININO</a>
+                        
+                      <ul>
+                        
+                        <li><a href="#">NEW IN</a></li>
+                        <li><a href="#">Vestido</a></li>
+                        <li><a href="#">Blusa</a></li>
+                        <li><a href="#">Body</a></li>
+                        <li><a href="#">Camiseta</a></li>
+                        <li><a href="#">Jaqueta</a></li>
+                        <li><a href="#">Moletom</a></li>
+                        <li><a href="#">Calça</a></li>
+                        
+                        <li><p> <strong>ON SALE </strong></p></li>
+                        <li><a href="#">mais vendidos</a></li>
+                        <li><a href="#">tendências</a></li>
+                      </ul>
+                      </li>
+                      <li><a href="masculino.html">MASCULINO</a>
+                      <ul>
+                        <li><a href="#">NEW IN</a></li>
+                        <li><a href="#">Polo</a></li>
+                        <li><a href="#">Blusa</a></li>
+                        <li><a href="#">Regata</a></li>
+                        <li><a href="#">Camiseta</a></li>
+                        <li><a href="#">Jaqueta</a></li>
+                        <li><a href="#">Moletom</a></li>
+                        <li><a href="#">Calça</a></li>
+                        
+                        <li><p> <strong>ON SALE </strong></p></li>
+                        <li><a href="#">mais vendidos</a></li>
+                        <li><a href="#">tendências</a></li>
+                      </ul>
+                      <li><a href="infantil.html">INFANTIL</a>
+                        <ul>
+                          <li><a href="">NEW IN</a></li>
+                          <li><a href="#">Macacão</a></li>
+                          <li><a href="#">Body</a></li>
+                          <li><a href="#">Blusa</a></li>
+                          <li><a href="#">Conjunto</a></li>
+                          <li><a href="#">Jardineira</a></li>
+                          <li><a href="#">Moletom</a></li>
+                          <li><a href="#">Calça</a></li>
+                          <li><a href="#">Bermuda</a></li>
+                         <li><p> <strong>ON SALE </strong></p></li>
+                          
+                          <li><a href="#">mais vendidos</a></li>
+                          <li><a href="#">tendências</a></li>
+                        </ul>
+                      </li>
+                     
+                      </ul>
+
+
+                  </div>
+          
+              </div>
+              </nav>
+
         <!-- Conteúdo do cabeçalho -->
 <div class="uniao">
 
-        <div class="logo"> <h1>BRAND</h1> </div>
+       <div class="logo"> <a href="index.html"><h1>BRAND</h1></a> </div>
+       <div id="divBusca">
+        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <img src="imagem/lupa.png" id="btnBusca" alt="Buscar" width="10" height="10"/>
+      </div>
         <!-- barra de pesquisa -->
         <div class="barrasuperio"> 
-
-<div class="pesquisa"><img src="imagem/lupa.png" alt="lupa" width="24" height="25" alingn="right"></div>
+          
+<!-- <div class="pesquisa"><img src="imagem/lupa.png" alt="lupa" width="24" height="25" alingn="right"></div> -->
          
-        <input type="text">
+        
 
 
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
                                                                 <!-- menu do login-->
           <div class="menu3" onclick="toggleCaixaLogin()"> INICIAR SEÇÃO</div>
           <div class="caixa-login" id="caixa-login">
-            <a class="link" href="cadastro.html">Cadastro</a>
-            <a class="link" onclick="toggleLogin()">Login</a>
+            <a class="link" href="cadastro.html"><p style="text-align: center; border: 1px solid black;">   CRIE SUA CONTA   </p>
+            <p style="text-align: center;">OU</p>
+            <a class="link" onclick="toggleLogin()"><p style="text-align: center; border: 1px solid black;">   ACESSE SUA CONTA   </p></a>
             <div id="caixa-login-form" style="display: none;">
               <input type="email" placeholder="E-mail">
               <input type="password" placeholder="Senha">
@@ -112,63 +191,51 @@
 
 
        <main>
-        <!-- Conteúdo principal do corpo  -->
-        
+                                                          <!-- Conteúdo principal do corpo  -->
+      
+                                                          <H2 class="logo" >DADOS PESSOAIS</H2>  <br><br>
 
 
-        
-      <main>
-   
-
-        <h2>DADOS PESSOAIS</h2>
-        <form action="" method="POST">
-          <div class="cadastro">
-            <div class="ladoalado1">
-              <input type="email" id="email" name="email" placeholder="E-MAIL" required><br><br>
-              <input type="password" id="password" name="password" placeholder="SENHA" required><br><br>
-              <input type="text" id="fullname" name="fullname" placeholder="NOME COMPLETO" required><br><br>
-              <button type="submit">CADASTRAR</button>
-            </div>
-        
-            <div class="ladoalado2">
-              <input type="password" id="password" name="password" placeholder="COMFIRME SUA SENHA" required>
-              <br><br>
-              <input type="checkbox" id="receberatualiacao">
-              <label for="receberatualiacao"> Desejo receber novidades da BRAND no meu e-mail</label><br>
-              <input type="checkbox" id="politicasite" >
-              <label for="politicasite"> Li e entendi a <a href="https://static.zara.net/static/pdfs/BR/privacy-policy/privacy-policy-pt_BR-20210721.pdf">Política de Privacidade e Cookies</a></label><br>
-            </div>
-          </div>
-        </form>
-        
-        
-        
-        
-        
-        
-        
+                                                          <form class="dados-pessoais" action="" method="POST">
+                                                            <div class="cadastro">
+                                                              <div class="ladoalado1">
+                                                                <input type="email" id="email" name="email" placeholder="E-MAIL" required><br><br>
+                                                                <input type="password" id="password" name="password" placeholder="SENHA" required><br><br>
+                                                                <input type="text" id="fullname" name="fullname" placeholder="NOME COMPLETO" required><br><br>
+                                                                <button type="submit">CADASTRAR</button>
+                                                              </div>
+                                                          
+                                                              <div class="ladoalado2">
+                                                                <input type="password" id="password" name="password" placeholder="COMFIRME SUA SENHA" required>
+                                                                <br><br>
+                                                                <input type="checkbox" id="receberatualiacao">
+                                                                <label for="receberatualiacao"> Desejo receber novidades da BRAND no meu e-mail</label><br>
+                                                                <input type="checkbox" id="politicasite" >
+                                                                <label for="politicasite"> Li e entendi a <a href="https://static.zara.net/static/pdfs/BR/privacy-policy/privacy-policy-pt_BR-20210721.pdf">Política de Privacidade e Cookies</a></label><br>
+                                                              </div>
+                                                            </div>
 
 
 
+  
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+ 
+
+ 
 
 
+  
 
 
       </main>
     
-      <br><br><br>
-      <br><br><br>
-      <br><br><br>
-      <br><br><br>
-      <br><br><br>
-      <br><br><br>
-      <br><br><br>
-      <br><br><br>
-      <br><br><br>
-      <br><br><br>
-      <br><br><br>
+      
 
-
+      <hr size="1">
 
 
 
@@ -176,36 +243,50 @@
       <footer>
         <!-- Conteúdo do rodapé -->
         
-        <div class="participante1"> 
 
-<h2>ESTENIO COUTO BORGES JUNIOR</h2>
-<a href="https://github.com/esteniocouto">  <img src="imagem/github.png" alt="github" width="30" height="30"></a>
-<a href=""> <img src="imagem/linkedin.png" alt="link" width="30" height="30"></a>
-<A>CIÊNCIA DE DADOS</A>
-<br>
-<h2>ESTENIO COUTO BORGES JUNIOR</h2>
-  <a href="erro_404.html">  <img src="imagem/github.png" alt="github" width="30" height="30"></a>
-  <a href="erro_404.html"> <img src="imagem/linkedin.png" alt="link" width="30" height="30"></a>
-  <A>CIÊNCIA DE DADOS</A>
+
+
+
+
+ 
+
+<div class="coluna"> 
+
+          <h4 class="h4footer">DESENVOLVEDORES</h4>
+<p style="font-size: 15px;">ESTENIO COUTO BORGES JUNIOR</p>
+<p style="font-size: 10px;">CIÊNCIA DE DADOS</p>
+
+<p style="font-size: 15px;">EMILY ESTER</p>
+  <A style="font-size: 10px;">ANALISE E DESENVOLVIMENTO DE SISTEMAS</p>
+
+    <p style="font-size: 15px;">MARIA EDUARDA NEVES COELHO</p>
+    <p style="font-size: 10px;">ANALISE E DESENVOLVIMENTO DE SISTEMAS</p>
+
+    <p style="font-size: 15px;">GABRIEL WILLIAM</p>
+      <p style="font-size: 10px;">CIÊNCIA DE DADOS</p>
+    
+</div>
+
+<div class="coluna"> 
+  <h4 class="h4footer">RECEBA A NOSSA NEWSLETTER</h4>
+                
+  <p style="font-size: 15px;">INSTAGRAM</p>
+  <p style="font-size: 15px;">FACEBOOK</p>
+  <P style="font-size: 15px;">TWITTER</P>
+  <a href="https://github.com/esteniocouto/padroesWeb"><p style="font-size: 15px;">GITHUB</p></a>
+  <a href="briefing.html">BRIEFING</a>
 
 </div>
 
-<div class="participante2">
-
-  <h2>ESTENIO COUTO BORGES JUNIOR</h2>
-<a href="erro_404.html">  <img src="imagem/github.png" alt="github" width="30" height="30"></a>
-<a href="erro_404.html"> <img src="imagem/linkedin.png" alt="link" width="30" height="30"></a>
-<A>CIÊNCIA DE DADOS</A>
-<br>
-<h2>ESTENIO COUTO BORGES JUNIOR</h2>
-  <a href="erro_404.html">  <img src="imagem/github.png" alt="github" width="30" height="30"></a>
-  <a href="erro_404.html"> <img src="imagem/linkedin.png" alt="link" width="30" height="30"></a>
-  <A>CIÊNCIA DE DADOS</A>
+<div class="coluna">
+   <p>© Copyright 2023. Todos os direitos reservados. Lojas BRAND S/A.</p>
+  <p>Setor De Grandes Áreas Norte (SGAN)</p> 
+  <p>Quadra 712/912, Conjunto E, Brasília/DF</p>
+  <p>CEP: 70.790-125.| CNPJ 00.00.000/000-00 | IE 00.00.00.00.</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.697886114851!2d-47.923689785144816!3d-15.819876289035387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3b557e20d187%3A0xea950ddfb524302b!2sFaculdade%20Senac%20DF!5e0!3m2!1spt-BR!2sbr!4v1686430021251!5m2!1spt-BR!2sbr"
+  width="300" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
 </div>
-
-
-
-
 
 
 
