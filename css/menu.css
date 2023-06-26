@@ -62,7 +62,7 @@
 
 .barra {
     background-color: #ffffff;
-    height: 55%;
+    height: 100%;
     width: 500px;
     position: fixed;
     transition: all .2s linear;
